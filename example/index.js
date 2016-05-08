@@ -22,7 +22,11 @@ http.createServer().listen(53370, function() {
     // hybridCrypto.paramENCRYPT_SEC_KEY('bb'); 
     // 
     var plainText = "===== just message,json===="
+    hybridCrypto.paramENCRYPT_SEC_KEY('key');
+    hybridCrypto.paramENCRYPT_SEC_KEY_HASH('hash'); 
+    hybridCrypto.paramENCRYPT_MESSAGE('message'); 
     var senderData= hybridCrypto.EncryptMessage(plainText,'./keyspub');
+
     console.log('plainText ==> ',plainText);
     console.log('sender encrypted Data => ',senderData);
     
@@ -34,6 +38,11 @@ http.createServer().listen(53370, function() {
     // paramDECRYPT_SEC_KEY_HASH,paramDECRYPT_MESSAGE
     // hybridCrypto.paramDECRYPT_SEC_KEY('bb'); 
     // 
+    // 
+    // 
+    hybridCrypto.paramDECRYPT_SEC_KEY('key');
+    hybridCrypto.paramDECRYPT_SEC_KEY_HASH('hash'); 
+    hybridCrypto.paramDECRYPT_MESSAGE('message'); 
     var receiverData = hybridCrypto.DecryptMessage(senderData,'./keyspri');
     console.log('receiver decrypted Data =>',receiverData);
 

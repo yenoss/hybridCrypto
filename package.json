@@ -1,0 +1,33 @@
+
+{
+  "name": "hybridCrypto",
+  "version": "0.1.0",
+  "description": "hybrid Crypto for node.js",
+  "author": { "name": "yenos", "email": "cpg0504@gmail.com" },
+  "contributors": [
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yenoss/hybridCrypto.git"
+  },
+  "bugs": {
+    "url": "http://github.com/github.com/yenoss/hybridCrypto.git/issues"
+  },
+  "main": "./lib/hybridCrypto/hybridCrypto.js",
+  "dependencies": {
+    "sha1": "1.1.1",
+    "node-rsa": "0.3.2",
+    "sha256": "0.2.0",
+    "aes256": "1.0.2"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+  },
+  "engines": { "node": ">= 0.12.14" },
+  "licenses": [ {
+    "type": "MIT",
+    "url": "http://www.opensource.org/licenses/MIT" 
+  } ],
+  "keywords": ["crypto", "encrypt", "decrypt", "security", "secure", "hybrid","hybridCrypto"]
+}

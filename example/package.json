@@ -1,0 +1,10 @@
+{
+  "name": "hybridCrypto-example",
+  "version": "0.0.0",
+  "dependencies": {
+    "sha1": ">= 0.0.0",
+    "node-rsa": ">= 0.0.0",
+    "sha256": ">= 0.0.0",
+    "aes256": ">= 0.0.0"
+  }
+}
